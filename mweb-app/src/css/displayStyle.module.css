@@ -1,0 +1,23 @@
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    transform: translateX(110%);
+
+    padding: 0.5rem;
+    width: 30%;
+
+    background: var(--cor-azul-escuro);
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    border-radius: var(--border-radius-botao);
+}
+
+.logo {
+    width: 5rem;
+}
