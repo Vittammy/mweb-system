@@ -1,23 +1,132 @@
+/* =============================== NAVBAR ================================================ */
+
 .nav_bar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     gap: 2rem;
 
     position: fixed;
-    top: 2rem;
-    left: 0;
-    transform: translateX(110%);
+    top: 3rem;
+    right: 5rem;
 
-    padding: 0.5rem;
-    width: 30%;
+    width: auto;
 
-    background: var(--cor-azul-escuro);
-    border: 1px solid rgba(128, 128, 128, 0.219);
+    background: transparent;
+    border: none;
+}
+
+.nav_bar p {
+    font-size: var(--font-size-menu-text);
+    cursor: pointer;
+    transition: var(--transition-all);
+    margin-right: 3rem;
+}
+
+.nav_bar p:hover {
+    color: var(--cor-laranja-padrao);
+    transform: scale(1.1);
+}
+
+/* --- SEÇÃO DA LOGO ( IMAGEM / EMPRESA ) --- */
+
+.section_logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    position: fixed;
+
+    top: 1.7rem;
+    left: 5rem;
+}
+
+
+/* --- BOTOES DE LOGIN --- */
+
+.button_login, .button_cadastro {
+    font-size: var(--font-size-p);
     border-radius: var(--border-radius-botao);
 }
 
-.logo {
-    width: 5rem;
+.button_cadastro {
+    padding: var(--spacing-botao);
+
+    background: white;
+    color: black;
+    /* border: 1px solid transparent; */
+
+    transition: var(--transition-all);
+}
+
+.button_cadastro:hover {
+    background: var(--background-laranja);
+    color: var(--cor-font-padrao);
+    transform: scale(1.1);
+}
+
+.button_login {
+    padding: var(--spacing-botao-comborda);
+    margin-left: 1.5rem;
+
+    background: transparent;
+    /* color: black; */
+    border: 0.1rem solid white;
+
+    transition: var(--transition-all);
+}
+
+.button_login:hover {
+    color: var(--cor-laranja-claro);
+    border: 0.1rem solid var(--cor-laranja-claro);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* =============================== VIEWS ================================================ */
+
+.home_container, .sign_up_container {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: var(--spacing-lg);
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+/* =============================== SIGN UP ================================================ */
+
+.sign_up_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+    padding: var(--spacing-lg);
+
+    color: var(--cor-font-escuro);
+    background: rgba(228, 228, 228, 0.863);
+    border-radius: var(--border-radius-lg);
+}
+
+
+/* =============================== HOME ================================================ */
+
+.destaque {
+  font-family: 'Playfair', serif; 
+  font-style: italic;
+  color: var(--cor-laranja-claro);
 }

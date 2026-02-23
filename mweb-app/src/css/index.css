@@ -1,11 +1,36 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: 'Inter'; 
+  src: url('/fonts/Inter/static/Inter_18pt-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair'; 
+  src: url('/fonts/Playfair/static/Playfair_9pt-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
 
   /* Cores */
   --cor-azul-escuro: #000616;
   --color-principal-darkblue: #000e33;
+  --cor-laranja-padrao: #ff8b0f;
+  --cor-laranja-escuro: #b35e03;
+  --cor-laranja-claro: #ffb96f;
+  --cor-roxo-padrao: #5e00ac;
+
+  --cor-font-padrao: rgba(255, 255, 255, 0.959);
+  --cor-font-escuro: rgb(27, 27, 27);
 
   /* Backgrounds */
   --background-azul: linear-gradient(to right, var(--color-principal-darkblue), var(--color-styles-lightblue), var(--color-principal-darkblue));
+  --background-laranja: linear-gradient(145deg, var(--cor-roxo-padrao), var(--cor-laranja-claro));
 
   /* Raios de Borda */
     --border-radius-sm: 0.25rem;
@@ -24,37 +49,45 @@
     --font-size-menu-text: 1.2rem;
 
 
+  /* Espaçamentos */
+    --spacing-xs: 0.5rem;
+    /* Extra Small - Celulares antigos */
+    --spacing-sm: 1rem;
+    /* Small - Smartphones */
+    --spacing-md: 1.5rem;
+    /* Medium */
+    --spacing-lg: 2.5rem;
+    /* Large - Telas maiores */
+    --spacing-xl: 4rem;
+    /* Extra Large - Telas muito grandes */
 
-  
+    --spacing-botao: 0.7rem 2rem;
+    --spacing-botao-comborda: 0.6rem 2rem;
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+
+    /* Transições */
+    --transition-all: all 0.2s ease-in-out;
+
+
+
+  font-family: 'Inter', sans-serif;
 
 
 
 
   /* Tema */
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color-scheme: light;
+  color: var(--cor-font-padrao);
 
-  background-color: #000616;
+
+  /* Background de quadradinhos */
+  /* background-color: #000616;
   background-size: 40px 40px;
   background-image:
     linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px); */
 
 
-
-
-
-  /* Configurações de Texto */
-  font-synthesis: none;                 /* - impede que a fonte craquele tentando se adaptar */
-  text-rendering: optimizeLegibility;   /* - prioriza a legibilidade e não velocidade */
-
-  /* - Limpam a borda das letras ( impede que pareça pixelada ) */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -68,20 +101,20 @@ a:hover {
 
 
 body {
-  margin: 0;
-
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
-  min-width: 320px;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 
 
 /* Fonts */
-p {font-size: var(--font-size-p);}
+/* p {font-size: var(--font-size-p);}
 h1 {font-size: var(--font-size-h1);}
 h5 {font-size: var(--font-size-h5);}
-.subText {font-size: var(--font-size-sub);}
+.subText {font-size: var(--font-size-sub);} */
