@@ -5,8 +5,8 @@ export default function NavBar() {
         <>
 
             <section className={style.section_logo}>
-                <a href="#"><img src="/mweb4.png" alt="logo" style={{ width: '5rem', marginBottom: '0.5rem'}} /></a>
-                <h1 className='text-5xl'>MWEB</h1>
+                <a href="#"><img src="/mweb-roxo.png" alt="logo" style={{ width: '5rem', marginBottom: '0.5rem'}} /></a>
+                {/* <h1 className='text-5xl'>MWEB</h1> */}
             </section>
             
             <nav className={style.nav_bar}> 

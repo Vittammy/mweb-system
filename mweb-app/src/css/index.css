@@ -21,9 +21,10 @@
   --cor-azul-escuro: #000616;
   --color-principal-darkblue: #000e33;
   --cor-laranja-padrao: #ff8b0f;
-  --cor-laranja-escuro: #b35e03;
+  --cor-laranja-escuro: #824300;
   --cor-laranja-claro: #ffb96f;
   --cor-roxo-padrao: #5e00ac;
+  --cor-roxo-escuro: #3a0069;
 
   --cor-font-padrao: rgba(255, 255, 255, 0.959);
   --cor-font-escuro: rgb(27, 27, 27);
@@ -101,14 +102,17 @@ a:hover {
 
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 
